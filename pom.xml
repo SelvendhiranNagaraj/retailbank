@@ -6,16 +6,28 @@
 
   <groupId>com.selva.retailbank</groupId>
   <artifactId>sstbank</artifactId>
+  <packaging>pom</packaging>
   <version>1.0-SNAPSHOT</version>
-
+  <modules>
+    <module>identity</module>
+    <module>accounts</module>
+    <module>cards</module>
+    <module>payments</module>
+    <module>insurance</module>
+    <module>fraud</module>
+      <module>eurekaserver</module>
+    <module>apigateway</module>
+    <module>notification</module>
+  </modules>
+<!--Modules/Microservices list for Retail bnaking -->
   <name>sstbank</name>
   <!-- FIXME change it to the project's website -->
-  <url>http://www.example.com</url>
+  <url>https://www.sstbank.com</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>1.7</maven.compiler.source>
-    <maven.compiler.target>1.7</maven.compiler.target>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
     <spring.boot.dependency.version>2.6.6</spring.boot.dependency.version>
   </properties>
 
