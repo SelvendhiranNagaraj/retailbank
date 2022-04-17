@@ -1,0 +1,12 @@
+server:
+  port: 8088
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  application:
+    name: cloud-config
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka/

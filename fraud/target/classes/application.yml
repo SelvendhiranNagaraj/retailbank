@@ -1,0 +1,12 @@
+server:
+  port: 8086
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  application:
+    name: fraud
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka/

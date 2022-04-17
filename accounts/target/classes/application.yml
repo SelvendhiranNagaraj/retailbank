@@ -1,0 +1,15 @@
+server:
+  port: 8082
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  application:
+    name: accounts
+
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka/
+    fetch-registry: true
+    register-with-eureka: true
